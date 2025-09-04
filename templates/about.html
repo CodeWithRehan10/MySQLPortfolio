@@ -1,0 +1,158 @@
+{% extends "layout.html" %}
+{% block title %}About - Muhammad Rehan{% endblock %}
+{% block content %}
+<div class="relative py-16 px-4 sm:px-6 lg:px-8">
+    <!-- Animated background elements -->
+    <div class="absolute inset-0 overflow-hidden z-0">
+        <div class="absolute top-1/4 left-10 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-1/3 right-10 w-96 h-96 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto z-10">
+        <!-- Header Section -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
+                <span class="gradient-text">Crafting Digital Excellence</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Backend developer with a passion for transforming complex problems into elegant, scalable solutions
+            </p>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="glass-effect rounded-3xl p-8 md:p-12 mb-16 flex flex-col md:flex-row items-center">
+            <div class="mb-8 md:mb-0 md:mr-12 flex-shrink-0">
+                <div class="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full overflow-hidden shadow-2xl flex items-center justify-center">
+                    <span class="text-white text-6xl md:text-8xl font-bold">MR</span>
+                </div>
+            </div>
+            <div class="flex-grow text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Muhammad Rehan</h2>
+                <p class="text-xl text-indigo-600 dark:text-indigo-400 font-medium mb-6">Python Backend Developer</p>
+                <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
+                    I specialize in creating robust backend systems that power exceptional digital experiences. With a focus on clean code, scalability, and performance, I build solutions that stand the test of time.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                    <span class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 rounded-full font-medium">Flask</span>
+                    <span class="px-4 py-2 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-full font-medium">FastAPI</span>
+                    <span class="px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full font-medium">REST APIs</span>
+                    <span class="px-4 py-2 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-full font-medium">Python</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Philosophy Section -->
+        <div class="glass-effect rounded-3xl p-8 md:p-12 mb-12">
+            <div class="text-center mb-10">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 dark:bg-indigo-900/30 rounded-2xl mb-4">
+                    <i class="fas fa-lightbulb text-3xl text-indigo-600 dark:text-indigo-400"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">My Philosophy</h2>
+            </div>
+            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center max-w-3xl mx-auto">
+                I believe that exceptional backend development is the foundation of every great digital product. It's not just about making things work—it's about creating systems that are <span class="font-semibold text-indigo-600 dark:text-indigo-400">efficient, maintainable, and scalable</span>. I approach each project with a problem-solving mindset, focusing on elegant solutions that stand the test of time and growth.
+            </p>
+        </div>
+
+        <!-- Skills & Expertise -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="glass-effect rounded-3xl p-8">
+                <div class="flex items-center mb-6">
+                    <div class="mr-4 w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-code text-xl text-green-600 dark:text-green-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white">Backend Development</h3>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                    Building robust server-side applications with Python, Flask, and FastAPI. Creating RESTful APIs, authentication systems, and database architectures.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-full text-sm">Python</span>
+                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-full text-sm">Flask</span>
+                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-full text-sm">FastAPI</span>
+                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-full text-sm">REST APIs</span>
+                </div>
+            </div>
+
+            <div class="glass-effect rounded-3xl p-8">
+                <div class="flex items-center mb-6">
+                    <div class="mr-4 w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-database text-xl text-blue-600 dark:text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white">Database Management</h3>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                    Designing efficient database schemas, writing optimized queries, and ensuring data integrity across applications.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm">SQLite</span>
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm">PostgreSQL</span>
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm">MySQL</span>
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm">SQLAlchemy</span>
+                </div>
+            </div>
+
+            <div class="glass-effect rounded-3xl p-8">
+                <div class="flex items-center mb-6">
+                    <div class="mr-4 w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-robot text-xl text-purple-600 dark:text-purple-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white">Automation</h3>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                    Creating scripts and tools to automate repetitive tasks, improve workflows, and increase productivity.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-full text-sm">Scripting</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-full text-sm">Web Scraping</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-full text-sm">Task Automation</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-full text-sm">Workflow Optimization</span>
+                </div>
+            </div>
+
+            <div class="glass-effect rounded-3xl p-8">
+                <div class="flex items-center mb-6">
+                    <div class="mr-4 w-12 h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-cloud text-xl text-yellow-600 dark:text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white">DevOps & Deployment</h3>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                    Deploying applications to production environments, configuring servers, and implementing CI/CD pipelines.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-300 rounded-full text-sm">Docker</span>
+                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-300 rounded-full text-sm">Git</span>
+                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-300 rounded-full text-sm">Linux</span>
+                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-300 rounded-full text-sm">AWS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future Goals -->
+        <div class="glass-effect rounded-3xl p-8 md:p-12">
+            <div class="text-center mb-10">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-2xl mb-4">
+                    <i class="fas fa-rocket text-3xl text-purple-600 dark:text-purple-400"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Future Vision</h2>
+            </div>
+            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center max-w-3xl mx-auto mb-8">
+                The technology landscape is constantly evolving, and I'm committed to growing alongside it. I'm currently expanding my expertise in <span class="font-semibold text-purple-600 dark:text-purple-400">cloud architecture, machine learning integration, and advanced DevOps practices</span> to build even more powerful and scalable solutions.
+            </p>
+            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center max-w-3xl mx-auto">
+                I'm always excited to tackle new challenges and collaborate on innovative projects that push the boundaries of what's possible with technology.
+            </p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-20">
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">Interested in working together?</h2>
+            <a href="/contact" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-2xl font-semibold transition-all duration-300 hover:shadow-xl hover:from-purple-700 hover:to-indigo-700">
+                <span>Get In Touch</span>
+                <i class="fas fa-paper-plane ml-3"></i>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

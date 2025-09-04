@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block title %}Home - Muhammad Rehan{% endblock %}
+{% block content %}
+<div class="relative min-h-screen flex flex-col items-center justify-center py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <!-- Animated background elements -->
+    <div class="absolute inset-0 overflow-hidden z-0">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-bounce"></div>
+        <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-bounce" style="animation-delay: 2s"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-bounce" style="animation-delay: 4s"></div>
+        <div class="absolute bottom-1/3 right-1/3 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-bounce" style="animation-delay: 6s"></div>
+    </div>
+
+    <div class="relative z-10 text-center max-w-4xl mx-auto">
+        <!-- Animated Profile Image -->
+        <div class="mb-8 floating">
+            <div class="inline-flex items-center justify-center w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full shadow-2xl overflow-hidden">
+                <span class="text-white text-4xl md:text-5xl font-bold">MR</span>
+            </div>
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 leading-tight">
+            <span class="gradient-text">Muhammad Rehan</span>
+        </h1>
+        
+        <!-- Subtitle -->
+        <p class="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 font-light mb-8 max-w-3xl mx-auto leading-relaxed">
+            Python Backend Developer crafting robust, scalable digital solutions
+        </p>
+
+        <!-- Description -->
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+            I specialize in building high-performance backend systems with Flask and FastAPI, 
+            creating RESTful APIs, and developing automation solutions that drive efficiency and innovation.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <a href="/projects" class="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-2xl font-semibold transition-all duration-300 hover:from-indigo-700 hover:to-purple-700 hover:shadow-2xl transform hover:-translate-y-1">
+                <span>View My Work</span>
+                <i class="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform duration-300"></i>
+            </a>
+            <a href="/contact" class="group inline-flex items-center justify-center px-8 py-4 glass-effect text-gray-800 dark:text-white rounded-2xl font-semibold transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-1">
+                <span>Get In Touch</span>
+                <i class="fas fa-paper-plane ml-3 group-hover:translate-x-1 transition-transform duration-300"></i>
+            </a>
+        </div>
+
+        <!-- Technologies Section -->
+        <div class="glass-effect rounded-3xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">Technologies I Work With</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="tech-item flex items-center px-4 py-2 bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 rounded-full">
+                    <i class="fab fa-python mr-2"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item flex items-center px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full">
+                    <i class="fas fa-flask mr-2"></i>
+                    <span>Flask</span>
+                </div>
+                <div class="tech-item flex items-center px-4 py-2 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-full">
+                    <i class="fas fa-bolt mr-2"></i>
+                    <span>FastAPI</span>
+                </div>
+                <div class="tech-item flex items-center px-4 py-2 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-full">
+                    <i class="fas fa-database mr-2"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="tech-item flex items-center px-4 py-2 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-300 rounded-full">
+                    <i class="fas fa-code mr-2"></i>
+                    <span>REST APIs</span>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
